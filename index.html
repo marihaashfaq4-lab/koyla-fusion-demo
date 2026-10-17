@@ -1,0 +1,103 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Koyla Fusion | Website demo</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"><style>
+:root{--bg:#FBF6F1;--ink:#1E1612;--mute:#6F5D50;--line:#EADFD4;--card:#FFFFFF;--acc:#D9480F;--acc2:#FFD8C2;--on:#FFFFFF;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14100D;--ink:#F5EBE2;--mute:#BBA898;--line:#34281F;--card:#1F1713;--acc:#FF7A33;--acc2:#4A2512;--on:#14100D;}}
+:root[data-theme="dark"]{--bg:#14100D;--ink:#F5EBE2;--mute:#BBA898;--line:#34281F;--card:#1F1713;--acc:#FF7A33;--acc2:#4A2512;--on:#14100D;}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,sans-serif}
+h1,h2,h3{font-family:Georgia,serif;margin:0;line-height:1.15}
+.w{max-width:980px;margin:0 auto;padding:0 20px}.tag{background:var(--ink);color:var(--bg);text-align:center;font-size:13px;padding:6px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}nav b{font:700 22px Georgia,serif}nav a{color:var(--mute);text-decoration:none;margin-left:18px;font-size:15px}
+.hero{padding:56px 0 48px}.hero h1{font-size:clamp(34px,6vw,58px);max-width:620px}.hero p{color:var(--mute);max-width:480px;margin:16px 0 24px;font-size:18px}
+.btn,button{background:var(--acc);color:var(--on);border:0;border-radius:999px;padding:11px 22px;font:500 15px inherit;cursor:pointer;text-decoration:none;display:inline-block}
+:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+section{padding:44px 0;border-top:1px solid var(--line)}h2{font-size:30px;margin-bottom:20px}
+.g{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:18px}
+.c{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}.ph{height:128px;display:grid;place-items:center;font-size:52px;background:linear-gradient(135deg,var(--acc2),var(--card))}
+.b{padding:14px 16px 16px}.b h3{font-size:18px}.b p{margin:4px 0 12px;color:var(--mute);font-size:14px}.r{display:flex;justify-content:space-between;align-items:center}.r button{padding:8px 16px}
+.bar{position:sticky;bottom:0;background:var(--card);border-top:1px solid var(--line);padding:12px 20px calc(12px + env(safe-area-inset-bottom,0px));display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.bar span{font-weight:500}.bar .ghost{background:transparent;color:var(--mute);border:1px solid var(--line)}
+footer{padding:26px 0 40px;color:var(--mute);font-size:14px;border-top:1px solid var(--line)}
+input,select{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);font:inherit}label{font-size:14px;color:var(--mute)}
+.f{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;max-width:560px}.f .full{grid-column:1/-1}
+@media(max-width:560px){.f{grid-template-columns:1fr}nav a{display:none}}
+
+button,.btn{font-family:inherit;font-size:15px;font-weight:500}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center}
+.art{position:relative;aspect-ratio:1/.92;border-radius:28px;background:linear-gradient(145deg,var(--acc2),var(--card));border:1px solid var(--line);display:grid;place-items:center;overflow:hidden}
+.art .big{font-size:clamp(90px,16vw,150px);filter:drop-shadow(0 14px 18px rgba(0,0,0,.18))}
+.art .s{position:absolute;font-size:38px;animation:fl 6s ease-in-out infinite}.art .s1{top:10%;left:9%}.art .s2{bottom:12%;right:10%;animation-delay:1.5s}.art .s3{top:14%;right:12%;animation-delay:3s}
+.chip{position:absolute;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:8px 12px;font-size:13px;font-weight:500;box-shadow:0 8px 22px rgba(0,0,0,.1)}.chip.a{left:6%;bottom:8%}.chip.b{right:6%;top:46%}
+@keyframes fl{50%{transform:translateY(-10px)}}@media(prefers-reduced-motion:reduce){.art .s{animation:none}}
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;padding:6px 0 38px}.trust div{display:flex;gap:10px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-weight:500;font-size:15px}.trust div:before{content:"✓";display:grid;place-items:center;flex:none;width:26px;height:26px;border-radius:50%;background:var(--acc);color:var(--on);font-size:14px}
+.c{transition:transform .25s,box-shadow .25s}.c:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(0,0,0,.12)}
+.ph{position:relative;height:150px}.ph span{font-size:64px;transition:transform .3s}.c:hover .ph span{transform:scale(1.12) rotate(-4deg)}
+.ph em{position:absolute;top:10px;left:10px;font-style:normal;font-size:12px;background:var(--acc);color:var(--on);padding:3px 10px;border-radius:999px}
+.st{color:#E9A82B;font-size:13px;margin-bottom:2px}.st small{color:var(--mute);margin-left:4px}
+.q{padding:20px;display:flex;flex-direction:column;gap:12px}.q p{margin:0;font-size:16px;color:var(--ink)}.q b{color:var(--mute);font-weight:500;font-size:14px}
+footer b{color:var(--ink)}
+@media(max-width:700px){.hero{grid-template-columns:1fr}.trust{grid-template-columns:1fr}.art{aspect-ratio:1/.7}}
+body{font-family:'DM Sans',system-ui,sans-serif}h1,h2,h3,nav b{font-family:'Oswald',Georgia,serif}#gl{position:fixed;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none;display:none}
+.gl #gl{display:block}.gl .art{display:none}
+.gl section{background:color-mix(in srgb,var(--bg) 78%,transparent)}
+#pg{position:fixed;top:0;left:0;height:3px;width:100%;background:var(--acc);transform:scaleX(0);transform-origin:0 50%;z-index:9}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}.rv.on{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+</style></head><body><canvas id="gl" aria-hidden="true"></canvas><div id="pg"></div><div class="tag">Website demo for Koyla Fusion, made by AuraCode Web Studio</div><div class="w"><nav><b>Koyla Fusion</b><div><a href="#g">Menu</a><a href="#o">Order</a></div></nav>
+<div class="hero"><div><h1>Feel charcoal in town.</h1><p>Chicken Koyla Karahi, Koyla Biryani and the Koyla Burger. Koyla ka swaad, dil se yaad. Pick your favourites and send the order on WhatsApp.</p><a class="btn" href="#menu">See the menu</a></div><div class="art"><span class="s s1">🍛</span><span class="s s2">🔥</span><span class="s s3">🥤</span><span class="big">🍗</span><span class="chip a">★ 4.7 on Google Maps</span><span class="chip b">Open until 11:30 pm</span></div></div>
+<div class="trust"><div>Charcoal flavour</div><div>Also on foodpanda</div><div>Order by WhatsApp</div></div>
+<section id="menu"><h2>Menu</h2><div class="g" id="g"></div></section><section><h2>Find us</h2><div class="g"><div class="c q"><p>Shop no 4, Plot no 470, Hussaini Mission Road, Shahfaisal Colony No 4, Karachi.</p><b>Address</b></div><div class="c q"><p>Open until 11:30 pm.</p><b>Hours</b></div><div class="c q"><p>Order here on WhatsApp, or find Koyla Fusion on foodpanda.</p><b>Order options</b></div></div></section></div>
+<div class="bar"><span id="n"></span><div><button class="ghost" id="clr">Clear</button> <a class="btn" id="o" href="#">Order on WhatsApp</a></div></div><footer><div class="w"><b>Open until 11:30 pm. Shop no 4, Plot no 470, Hussaini Mission Road, Shahfaisal Colony No 4, Karachi.</b><br>Demo by AuraCode Web Studio. Menu and prices are taken from the Koyla Fusion menu poster and may need updating.</div></footer><script>const ITEMS=[['🍗','Chicken Koyla Karahi, half kg',600,'Charcoal-flavoured chicken karahi'],['🍗','Chicken Koyla Karahi, 1 kg',1200,'Charcoal-flavoured chicken karahi'],['🍛','Chicken Koyla Biryani',250,'Single portion'],['🍛','Chicken Koyla Biryani, 1 kg',500,'Family portion'],['🍔','Chicken Koyla Burger',400,'Charcoal-flavoured chicken burger'],['🥛','Raita',50,'Cool and fresh'],['🥤','Cold drink',70,'Chilled']];const WA='Hi Koyla Fusion, I would like to order:';const I=ITEMS,q={},g=document.getElementById('g');
+g.innerHTML=I.map((x,i)=>`<div class=c><div class=ph><span>${x[0]}</span></div><div class=b><h3>${x[1]}</h3><p>${x[3]}</p><div class=r><b>Rs ${x[2].toLocaleString()}</b><button data-i=${i} aria-label="Add ${x[1]}">Add</button></div></div></div>`).join('');
+const o=document.getElementById('o'),cl=document.getElementById('clr'),n=document.getElementById('n');
+function upd(){let c=0,t=0,l=[];for(const i in q){c+=q[i];t+=q[i]*I[i][2];l.push(q[i]+' x '+I[i][1])}
+n.textContent=c?c+(c==1?' item':' items')+' - Rs '+t.toLocaleString():'Your order is empty';
+o.href='https://wa.me/923152188770?text='+encodeURIComponent(WA+'\n'+l.join('\n')+'\nTotal: Rs '+t);o.style.display=cl.style.display=c?'':'none'}
+g.onclick=e=>{const i=e.target.dataset.i;if(i!=null){q[i]=(q[i]||0)+1;upd()}};
+cl.onclick=()=>{for(const k in q)delete q[k];upd()};upd();</script><script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(!reduce){const els=document.querySelectorAll('section h2,.trust,.g,.f');els.forEach(e=>e.classList.add('rv'));const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target)}}),{threshold:.1});els.forEach(e=>io.observe(e))}
+if(!window.THREE)return;
+let r;try{r=new THREE.WebGLRenderer({canvas:document.getElementById('gl'),alpha:true,antialias:true})}catch(e){return}
+document.documentElement.classList.add('gl');
+r.setPixelRatio(Math.min(devicePixelRatio,2));
+const scene=new THREE.Scene(),cam=new THREE.PerspectiveCamera(45,1,.1,100);cam.position.z=9;
+scene.add(new THREE.AmbientLight(0xffffff,.7));
+const pl=new THREE.PointLight(0xffffff,1.4);pl.position.set(5,6,8);scene.add(pl);
+const pl2=new THREE.PointLight(0xffffff,.6);pl2.position.set(-6,-3,5);scene.add(pl2);
+const M=(c,ro,me)=>new THREE.MeshStandardMaterial({color:c,roughness:ro==null?.5:ro,metalness:me||0});
+const grp=new THREE.Group();let anim=()=>{},tilt=.2;
+
+const base=new THREE.Mesh(new THREE.CylinderGeometry(1.75,1.6,.5,48),M(0x2A211B,.6,.3));base.position.y=-1;grp.add(base);
+const rim=new THREE.Mesh(new THREE.TorusGeometry(1.75,.07,12,64),M(0x8A8F98,.3,.9));rim.rotation.x=Math.PI/2;rim.position.y=-.75;grp.add(rim);
+const coals=[];for(let i=0;i<46;i++){const a=Math.random()*6.283,d=Math.sqrt(Math.random())*1.5,c=new THREE.Mesh(new THREE.IcosahedronGeometry(.13+Math.random()*.06,0),new THREE.MeshStandardMaterial({color:0x3A1A10,emissive:0xFF4500,emissiveIntensity:.7,roughness:.8}));c.position.set(Math.cos(a)*d,-.72+Math.random()*.1,Math.sin(a)*d);grp.add(c);coals.push(c)}
+for(let i=-3;i<=3;i++){const b=new THREE.Mesh(new THREE.CylinderGeometry(.03,.03,3.3,8),M(0xB8BEC8,.25,.9));b.rotation.z=Math.PI/2;b.position.set(0,-.35,i*.42);b.scale.y=Math.sqrt(Math.max(.05,1-(i*.42/1.75)**2));grp.add(b)}
+const fl=[];for(let i=0;i<7;i++){const a=i*.9,d=i?.55+(i%3)*.3:0,c=new THREE.Mesh(new THREE.ConeGeometry(.17,.9,10),new THREE.MeshBasicMaterial({color:i%2?0xFFB300:0xFF5A1F,transparent:true,opacity:.8}));c.position.set(Math.cos(a)*d,.1,Math.sin(a)*d);grp.add(c);fl.push(c)}
+const orb=new THREE.Group();for(let i=0;i<26;i++){const e=new THREE.Mesh(new THREE.SphereGeometry(.04+Math.random()*.03,8,8),new THREE.MeshBasicMaterial({color:0xFF7A33}));const a=Math.random()*6.283,d=1.8+Math.random()*1.4;e.position.set(Math.cos(a)*d,-.6+Math.random()*2.6,Math.sin(a)*d);orb.add(e)}
+grp.add(orb);tilt=.3;anim=(s,t)=>{orb.rotation.y=s*6+t*.5;fl.forEach((c,i)=>{c.scale.y=1+Math.sin(t*6+i*1.7)*.28;c.position.y=.1+(c.scale.y-1)*.4});coals.forEach((c,i)=>{c.material.emissiveIntensity=.55+Math.sin(t*3+i)*.3})};
+scene.add(grp);
+const n=500,pos=new Float32Array(n*3);
+for(let i=0;i<n;i++){const d=6+Math.random()*9,a=Math.random()*6.283,b=Math.acos(2*Math.random()-1);pos[i*3]=d*Math.sin(b)*Math.cos(a);pos[i*3+1]=d*Math.sin(b)*Math.sin(a);pos[i*3+2]=d*Math.cos(b)}
+const pg=new THREE.BufferGeometry();pg.setAttribute('position',new THREE.BufferAttribute(pos,3));
+const pts=new THREE.Points(pg,new THREE.PointsMaterial({color:0xFF7A33,size:.05,transparent:true,opacity:.7}));scene.add(pts);
+function size(){r.setSize(innerWidth,innerHeight,false);cam.aspect=innerWidth/innerHeight;cam.updateProjectionMatrix()}
+addEventListener('resize',size);size();
+const bar=document.getElementById('pg'),hero=document.querySelector('.hero>div');
+let s=0,t=0;
+function frame(){
+const max=Math.max(1,document.documentElement.scrollHeight-innerHeight),p=Math.min(1,Math.max(0,scrollY/max));
+s+=(p-s)*(reduce?1:.07);if(!reduce)t+=.01;
+const mob=innerWidth<760;
+grp.rotation.y=s*Math.PI*5+t*.3;grp.rotation.x=tilt+Math.sin(s*Math.PI*2)*.35;
+grp.position.x=mob?0:Math.cos(s*Math.PI*3)*2.8;grp.position.y=mob?1.9-s:0;
+grp.scale.setScalar((mob?.62:1)*(1+Math.sin(s*Math.PI)*.3));
+anim(s,t);pts.rotation.y=s*1.2+t*.02;cam.position.z=9-s*2.2;
+bar.style.transform='scaleX('+s+')';
+if(hero){const h=Math.min(1,scrollY/(innerHeight*.8));hero.style.transform='translateY('+(-h*50)+'px)';hero.style.opacity=1-h*.8}
+r.render(scene,cam);requestAnimationFrame(frame)}
+frame();
+})();
+</script>
+</body></html>
